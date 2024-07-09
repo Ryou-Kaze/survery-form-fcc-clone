@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width;initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="form-card-container">
+            <div class="form-card">
+                <div class="header-containter">
+                    <div class="header">
+                        <h1>freeCodeCamp Survey Form</h1>
+                        <p>Thank you for taking the time to help us improve the platform</p>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form action="" method="get" >
+                        <div class="fccform name">
+                            <div class="name-label"><label for="name">Name</label></div>
+                            <div class="stretch-input"><input type="text" name="name" id="name" required minlength="4" maxlength="5" placeholder="Name"/></div>
+                        </div>
+                        <div class="fccform email">
+                            <div class="email-label"><label for="email">Email</label></div>
+                            <div class="stretch-input"><input type="email" name="email" id="email" required placeholder="johndoe@gmail.com"/></div>
+                        </div>
+                        <div class="fccform age">
+                            <div class="age-label"><label for="age">Age (optional)</label></div>
+                            <div class="stretch-input"><input type="number" name="age" id ="age"  minlength="18" maxlength="100" placeholder="Age"/></div>
+                        </div>
+                        <div class="fccform current-role">
+                            <label for="role-options">Which option best describes your current role?</label>
+                            <div class="stretch-input">
+                                <select id="role-options">
+                                    <option>Select current role</option>
+                                    <option>Student</option>
+                                    <option>Full Time Job</option>
+                                    <option>Full Time Learner</option>
+                                    <option>Prefer not to say</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="fccform recommend">
+                            <div class="fielset-title">Would you recommend freeCodeCamp to a friend?</div>
+                            <fieldset>
+
+                                <div class="definitely input">
+                                    <input type="radio" name="definitely" id="definitely">
+                                    <label for="definitely">Definitely</label>
+                                </div>
+                                
+                                <div class="maybe input">
+                                    <input type="radio" name="maybe" id="maybe">
+                                    <label for="maybe">Maybe</label>
+                                </div>
+                                <div class="notsure input">
+                                    <input type="radio" name="notsure" id="notsure">
+                                    <label for="notsure">Not sure</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="favourite-features">
+                            <label for="features-options">What is your favorite feature of freeCodeCamp?</label>
+                            <div class="stretch-input">
+                                <select id="features-options">
+                                    <option>Select an option</option>
+                                    <option>Challenges</option>
+                                    <option>Projects</option>
+                                    <option>Community</option>
+                                    <option>Open Source</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="fccform improvement">
+                            <div class="fielset-title">What would you like to see improved? (Check all that apply)</div>
+                            <fieldset>
+                                <div class="frontend input">
+                                    <input type="checkbox" name="frontend" id="frontend">
+                                    <label for="frontend">Front-end Projects</label>
+                                </div>
+                                <div class="backend input">
+                                    <input type="checkbox" name="backend" id="backend">
+                                    <label for="backend">Back-end Projects</label>
+                                </div>
+                                <div class="datavis input">
+                                    <input type="checkbox" name="datavis" id="datavis">
+                                    <label for="datavis">Data Visualization</label>
+                                </div>
+                                <div class="challenges input">
+                                    <input type="checkbox" name="challenges" id="challenges">
+                                    <label for="challenges">Challenges</label>
+                                </div>
+                                <div class="opensource input">
+                                    <input type="checkbox" name="opensource" id="opensource">
+                                    <label for="opensource">Open Source Community</label>
+                                </div>
+                                <div class="gitterhelp input">
+                                    <input type="checkbox" name="gitterhelp" id="gitterhelp">
+                                    <label for="gitterhelp">Gitter help rooms</label>
+                                </div>
+                                <div class="videos input">
+                                    <input type="checkbox" name="videos" id="videos">
+                                    <label for="videos">Videos</label>
+                                </div>
+                                <div class="citymeets input">
+                                    <input type="checkbox" name="citymeets" id="citymeets">
+                                    <label for="citymeets">City Meetups</label>
+                                </div>
+                                <div class="wiki input">
+                                    <input type="checkbox" name="wiki" id="wiki">
+                                    <label for="wiki">Wiki</label>
+                                </div>
+                                <div class="forum input">
+                                    <input type="checkbox" name="forum" id="forum">
+                                    <label for="forum">Forum</label>
+                                </div>
+                                <div class="addcourse input">
+                                    <input type="checkbox" name="addcourse" id="addcourse">
+                                    <label for="addcourse">Additional Courses</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="fcc comment">
+                            <label for="suggestion">Any comments or suggestions?</label>
+                            <textarea name="suggestion" id="suggestion"  placeholder="Enter your comment here..." rows="5" cols="33"></textarea>
+                        </div>
+                        <div class="fcc submit">
+                            <input type="submit" name="submit-form" id="submit-form" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
